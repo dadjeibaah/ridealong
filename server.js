@@ -16,7 +16,7 @@ var port = process.env.PORT || 8000;
 mongoose.connect(process.env['MONGODB_URI']);
 
 server.connection({
-    host: 'localhost',
+    host: '0.0.0.0',
     port: port
 });
 

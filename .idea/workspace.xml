@@ -89,8 +89,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -223,10 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,7 +316,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1117,7 +1117,8 @@
       <workItem from="1471471826515" duration="4259000" />
       <workItem from="1471645462175" duration="224000" />
       <workItem from="1471655214625" duration="7133000" />
-      <workItem from="1471672818689" duration="45000" />
+      <workItem from="1471672818689" duration="650000" />
+      <workItem from="1471707224572" duration="416000" />
     </task>
     <task id="LOCAL-00001" summary="initial baseline project">
       <created>1470354893724</created>
@@ -1175,11 +1176,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471667499771</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changes port number">
+      <created>1471672872274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1471672872274</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145556000" />
+    <option name="totallyTimeSpent" value="146577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1257,7 +1265,8 @@
     <MESSAGE value="changes joi module name" />
     <MESSAGE value="changes vision module name" />
     <MESSAGE value="changes all instances of joi" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes all instances of joi" />
+    <MESSAGE value="changes port number" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes port number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1626,8 +1635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="225">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
         </state>
       </provider>
