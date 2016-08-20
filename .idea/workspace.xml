@@ -79,8 +79,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -1158,7 +1158,7 @@
       <workItem from="1471471696957" duration="69000" />
       <workItem from="1471471826515" duration="4259000" />
       <workItem from="1471645462175" duration="224000" />
-      <workItem from="1471655214625" duration="6589000" />
+      <workItem from="1471655214625" duration="6727000" />
     </task>
     <task id="LOCAL-00001" summary="initial baseline project">
       <created>1470354893724</created>
@@ -1195,11 +1195,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471666448295</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changes joi module name">
+      <created>1471667173990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1471667173990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144967000" />
+    <option name="totallyTimeSpent" value="145105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -1274,7 +1281,8 @@
     <MESSAGE value="initial baseline project" />
     <MESSAGE value="update mongodb connection to use enviroment variable" />
     <MESSAGE value="edit package.json to run npm install and start server" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit package.json to run npm install and start server" />
+    <MESSAGE value="changes joi module name" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes joi module name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1661,8 +1669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>

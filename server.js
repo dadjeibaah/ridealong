@@ -3,7 +3,7 @@ const Joi = require('joi');
 const _ = require('lodash');
 const mongoose = require('mongoose');
 const Inert = require('inert');
-const Vision = require('Vision');
+const Vision = require('vision');
 const HapiSwagger = require('hapi-swagger');
 const Good = require("good");
 
