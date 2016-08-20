@@ -22,6 +22,13 @@ exports.register = function(server, options, next){
         handler:AuthCtrl.verify
     });
 
+    server.route({
+        method:'GET',
+        path:"/logout",
+        handler:AuthCtrl.logout
+    });
+
+
     return next();
 };
 

@@ -98,6 +98,20 @@ exports.register = function (server, options, next) {
 
     });
 
+    server.route({
+        method: 'DELETE',
+        path: '/rides/{id}',
+        config: {
+            tags: ['api'],
+            validate: {
+                params: {
+                    id: Joi.string().required()
+                }
+            }
+        },
+            handler: RidesCtrl.delete
+        });
+
     return next();
 };
 

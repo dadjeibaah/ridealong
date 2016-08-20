@@ -19,9 +19,8 @@ module.exports = {
                     }
                 }, function (err, result) {
                     if (err) {
-                        if (err.code === 7104) {
-                            reply(Boom.notFound("user account could not be found"))
-                        }
+                        reply(Boom.unauthorized(err))
+
                     } else {
                         reply(result.accessTokenResponse);
                     }
@@ -31,7 +30,7 @@ module.exports = {
 
             }
 
-            if(grantType === 'refresh_token'){
+            if (grantType === 'refresh_token') {
                 var authenticator = new stormpath.OAuthAuthenticator(application);
                 authenticator.authenticate({
                     body: {
@@ -66,15 +65,27 @@ module.exports = {
             });
         });
     },
-    verify:function(request, reply){
+    verify: function (request, reply) {
         var accessToken = request.headers.authorization;
-        nJwt.verify(accessToken, process.env["STORMPATH_API_KEY_SECRET"], function(err, verifiedJwt){
-            if(err){
-                reply(Boom.notFound({message:"token expired"}));
-            }else{
-                console.log(verifiedJwt);
-                reply(verifiedJwt);
-            }
+        auth.client.getApplication(auth.appHref, function(err, application){
+            var authenticator = new stormpath.OAuthAuthenticator(application);
+            authenticator.authenticate({headers:{authorization:'Bearer: ' + accessToken}},
+            function(err, result){
+                if(err){
+                    reply(Boom.unauthorized());
+                } else{
+                    reply({message:"Authorized"});
+                }
+
+            })
+        });
+
+
+    },
+    logout: function (request, reply) {
+        auth.client.getApplication(auth.appHref, function (err, application) {
+            application.getAccounts();
+            reply();
         });
     }
 };
