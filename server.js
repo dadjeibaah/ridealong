@@ -1,5 +1,5 @@
 const Hapi = require('hapi');
-const Joi = require('Joi');
+const Joi = require('joi');
 const _ = require('lodash');
 const mongoose = require('mongoose');
 const Inert = require('inert');
