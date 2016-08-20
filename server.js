@@ -13,7 +13,7 @@ const options = {
 
 const server = new Hapi.Server();
 
-mongoose.connect('mongodb://localhost:27017/ridealong');
+mongoose.connect(process.env['MONGODB_URI']);
 
 server.connection({
     host: 'localhost',
