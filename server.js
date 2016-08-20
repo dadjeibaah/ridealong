@@ -12,12 +12,12 @@ const options = {
 };
 
 const server = new Hapi.Server();
-
+var port = process.env.PORT || 8000;
 mongoose.connect(process.env['MONGODB_URI']);
 
 server.connection({
     host: 'localhost',
-    port: 8000
+    port: port
 });
 
 server.register([
