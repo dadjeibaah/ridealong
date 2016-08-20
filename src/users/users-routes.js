@@ -1,5 +1,5 @@
 var UsersCtrl = require('./users-controller');
-var Joi = require('Joi');
+var Joi = require('joi');
 exports.register = function (server, options, next) {
 
     server.route({

@@ -1,5 +1,5 @@
 var RidesCtrl = require('./ride-controller');
-var Joi = require('Joi');
+var Joi = require('joi');
 exports.register = function (server, options, next) {
 
     server.route({
